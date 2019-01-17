@@ -1,29 +1,24 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
+    <FooterComponent/>
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+<script>
+import NavbarComponent from '@/components/NavbarComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
+export default {
+  components: {
+    NavbarComponent,
+    FooterComponent
   }
 }
+</script>
+
+
+<style lang="scss">
+@import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css);
+@import "./assets/css/animations.css";
 </style>
