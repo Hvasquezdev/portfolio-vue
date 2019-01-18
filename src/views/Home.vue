@@ -17,9 +17,14 @@
                 </li>
               </ul>
             </div>
-            <div class="columns">
-              <div class="column is-6">
-                <CardComponent />
+            <div class="columns is-multiline">
+              <div class="column is-6" v-for="(project, index) in projects" :key="index">
+                <CardComponent
+                  :img="project.img"
+                  :name="project.name"
+                  :technologies="project.tech"
+                  :description="project.description"
+                />
               </div>
             </div>
           </div>
@@ -46,7 +51,27 @@ export default {
   },
   data() {
     return {
-      imgLoaded: false
+      imgLoaded: false,
+      projects: [
+        {
+          img: require('../assets/sparesbox-min.png'),
+          name: 'Sparesbox',
+          tech: 'HTML5, Css3, Bulma.Css, JavaScript',
+          description: 'Responsive frontend Bulma.Css and some of animations with JavaScript ES6'
+        },
+        {
+          img: require('../assets/policia-app-min.png'),
+          name: 'Policia Municipal, Patrulleros de Angostura',
+          tech: 'HTML5, Css3, Bulma.Css JavaScript, Node.Js, Vue.Js, Express.Js, MySQL',
+          description: 'Application of traffic taxes with a login system, confirm payment, edit and report data, user level and more.'
+        },
+        {
+          img: require('../assets/hacker-news-min.png'),
+          name: 'Hacker News Clone',
+          tech: 'HTML5, Css3, Bulma.Css, React.Js',
+          description: 'Clone of the hacker news that include search, data filtering, delete posts and a 3g connection optimization.'
+        }
+      ]
     }
   },
   mounted() {

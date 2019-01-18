@@ -2,19 +2,19 @@
   <div class="card">
     <div class="card-image">
       <figure class="image is-4by3">
-        <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+        <img :src="img" :alt="name">
       </figure>
     </div>
     <div class="card-content">
       <div class="media">
         <div class="media-content">
-          <p class="title is-5">Sample Name</p>
-          <p class="subtitle is-5">Technologies</p>
+          <p class="title is-5">{{ name }}</p>
+          <p class="subtitle is-6">{{ technologies }}</p>
         </div>
       </div>
 
       <div class="content">
-        Short Description
+        {{ description }}
       </div>
     </div>
   </div>
@@ -22,7 +22,8 @@
 
 <script>
 export default {
-  name: 'CardComponent'
+  name: 'CardComponent',
+  props: ['img', 'name', 'technologies', 'description']
 }
 </script>
 
