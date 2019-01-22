@@ -43,7 +43,7 @@
 
       </div>
 
-      <a target="_blank" href="#" class="cv-link" id="aDown">
+      <a target="_blank" href="https://drive.google.com/open?id=1pUgAciv_zAiu7AdDPbflKmah0HnxmWK2" class="cv-link" id="aDown">
         <i class="fas fa-file-alt"></i>
         C.V
       </a>
