@@ -9,7 +9,10 @@
 .description,
 .contact,
 .social li,
-.cv-link {
+.cv-link,
+.tabs,
+.card,
+.about-card {
   animation-duration: 1s;
   animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
   animation-fill-mode: both;
@@ -78,6 +81,15 @@
 
 .cv-link {
   animation-delay: 1.3s;
+}
+
+.tabs,
+.about-card {
+  animation-delay: 1.4s;
+}
+
+.card {
+  animation-delay: 1.5s;
 }
 
 
@@ -221,6 +233,24 @@
 .cv-link {
   animation-duration: 500ms;
   animation-name: slideUp;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+.tabs {
+  animation-duration: 550ms;
+  animation-name: slideUp;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+.about-card {
+  animation-duration: 550ms;
+  animation-name: bounceIn;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
+}
+
+.card {
+  animation-duration: 650ms;
+  animation-name: slideDown;
   animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1.5);
 }
 

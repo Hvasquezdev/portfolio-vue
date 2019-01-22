@@ -31,8 +31,6 @@
         </div>
       </div>
     </section>
-
-    <ContactComponent />
   </div>
 </template>
 
@@ -40,14 +38,13 @@
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import AboutComponent from '@/components/AboutComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
-import ContactComponent from '@/components/ContactComponent.vue'
+
 export default {
   name: 'home',
   components: {
     HeaderComponent,
     AboutComponent,
-    CardComponent,
-    ContactComponent
+    CardComponent
   },
   data() {
     return {
