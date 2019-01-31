@@ -20,6 +20,7 @@
             <div class="columns is-multiline">
               <div class="column is-6" v-for="(project, index) in projects" :key="index">
                 <CardComponent
+                  :imgComp="project.imgComp"
                   :img="project.img"
                   :name="project.name"
                   :technologies="project.tech"
@@ -31,44 +32,28 @@
         </div>
       </div>
     </section>
+    <ModalComponent />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import HeaderComponent from '@/components/HeaderComponent.vue'
 import AboutComponent from '@/components/AboutComponent.vue'
 import CardComponent from '@/components/CardComponent.vue'
+import ModalComponent from '@/components/ModalComponent.vue'
 
 export default {
   name: 'home',
   components: {
     HeaderComponent,
     AboutComponent,
-    CardComponent
+    CardComponent,
+    ModalComponent
   },
   data() {
     return {
-      imgLoaded: false,
-      projects: [
-        {
-          img: require('../assets/sparesbox-min.png'),
-          name: 'Sparesbox',
-          tech: 'HTML5, Css3, Bulma.Css, JavaScript',
-          description: 'Responsive frontend Bulma.Css and some of animations with JavaScript ES6'
-        },
-        {
-          img: require('../assets/policia-app-min.png'),
-          name: 'Policia Municipal, Patrulleros de Angostura',
-          tech: 'HTML5, Css3, Bulma.Css JavaScript, Node.Js, Vue.Js, Express.Js, MySQL',
-          description: 'Application of traffic taxes with a login system, confirm payment, edit and report data, user level and more.'
-        },
-        {
-          img: require('../assets/hacker-news-min.png'),
-          name: 'Hacker News Clone',
-          tech: 'HTML5, Css3, Bulma.Css, React.Js',
-          description: 'Clone of the hacker news that include search, data filtering, delete posts and a 3g connection optimization.'
-        }
-      ]
+      imgLoaded: false
     }
   },
   mounted() {
@@ -95,6 +80,11 @@ export default {
         img.onload = () => element.className += ' is-loaded';
       }
     }
+  },
+  computed: {
+    ...mapGetters({
+      'projects': 'getProjects'
+    })
   }
 }
 </script>

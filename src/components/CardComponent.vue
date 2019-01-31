@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card" @click="toggleModal">
     <div class="card-image">
       <figure class="image is-4by3">
         <img :src="img" :alt="name">
@@ -23,7 +23,22 @@
 <script>
 export default {
   name: 'CardComponent',
-  props: ['img', 'name', 'technologies', 'description']
+  props: ['imgComp' ,'img', 'name', 'technologies', 'description'],
+  data() {
+    return {
+      cardData: {
+        img: this.imgComp,
+        name: this.name,
+        tech: this.technologies,
+        descrip: this.description
+      }
+    }
+  },
+  methods: {
+    toggleModal() {
+      this.$store.dispatch('toggleModal', this.cardData);
+    }
+  }
 }
 </script>
 
