@@ -1,20 +1,16 @@
 <template>
-  <div class="card" @click="toggleModal">
-    <div class="card-image">
-      <figure class="image is-4by3">
-        <img :src="img" :alt="name">
-      </figure>
-    </div>
-    <div class="card-content">
-      <div class="media">
-        <div class="media-content">
-          <p class="title is-5">{{ name }}</p>
-          <p class="subtitle is-6">{{ technologies }}</p>
-        </div>
+  <div class="column is-12">
+    <div class="blog-card alt is-width-100 about-card">
+      <div class="meta">
+        <div class="photo" v-bind:style="{backgroundImage: 'url(' + cardData.img + ')', backgroundPosition: 'top'}"></div>
       </div>
-
-      <div class="content">
-        {{ description }}
+      <div class="description">
+        <h2 class="has-text-weight-bold">{{ cardData.name }}</h2>
+        <p>
+          {{ cardData.descrip }} <br /> <br />
+          <strong>Technologies:</strong> {{ cardData.tech }}
+        </p>
+        <button @click="toggleModal" class="button is-warning is-outlined">Open</button>
       </div>
     </div>
   </div>
@@ -43,6 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../assets/css/card.scss';
 .card {
   &:hover {
     cursor: pointer;

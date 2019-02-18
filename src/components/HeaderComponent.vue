@@ -7,7 +7,7 @@
           Hector Vasquez
         </h1>
         <div class="job">
-          JavaScript Developer
+          Front-End Developer
         </div>
         <hr class="hr">
         <div class="description">
@@ -15,13 +15,22 @@
         </div>
         <div class="contact">
 
-          <a href="mailto:hvasquezdev@gmail.com" class="button is-warning is-outlined is-medium">
-            <span>Send email</span>
-            <span class="tooltip-text">Hvasquezdev@gmail.com</span>
-            <span class="icon is-small">
-              <i class="fas fa-mail-bulk"></i>
-            </span>
-          </a>
+          <div class="buttons">
+            <a href="mailto:hvasquezdev@gmail.com" class="button is-warning is-outlined is-medium">
+              <span>Send email</span>
+              <span class="tooltip-text">Hvasquezdev@gmail.com</span>
+              <span class="icon is-small">
+                <i class="fas fa-mail-bulk"></i>
+              </span>
+            </a>
+            
+            <router-link to="/certifications" tag="button" class="button is-warning is-outlined is-medium">
+              <span>Certifications</span>
+              <span class="icon is-small">
+                <i class="fas fa-certificate"></i>
+              </span>
+            </router-link>
+          </div>
         </div>
         <ul class="social">
           <li>

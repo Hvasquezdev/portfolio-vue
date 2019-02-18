@@ -14,12 +14,12 @@ export default new Router({
       component: Home
     },
     {
-      path: '/skills',
-      name: 'skills',
+      path: '/certifications',
+      name: 'certifications',
       // route level code-splitting
       // this generates a separate chunk (skills.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "skills" */ './views/Skills.vue')
+      component: () => import(/* webpackChunkName: "skills" */ './views/Certifications.vue')
     }
   ]
 })

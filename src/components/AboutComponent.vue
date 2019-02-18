@@ -5,9 +5,9 @@
         <div class="column is-12-desktop is-6-tablet">
           <h5 class="title is-5">About Me</h5>
           <p>
-            Hi, I'm a JavaScript developer with Vue.Js, Bulma Css. Interested in everything related to programming, 
+            Hi, I'm a Front-end developer with Vue.Js, Bulma Css. Interested in everything related to programming, 
             web development and Game development. Currently studying my junior year in the informatic engineering career, 
-            and learning and improving day by day my knowledge as a JavaScript developer.
+            and learning and improving day by day my knowledge as a Front-end developer.
           </p>
           <ul>
             <li>
@@ -75,6 +75,12 @@
                 <i class="fab fa-node-js"></i>
               </span>
               Node.Js - <span class="has-text-success has-text-weight-normal">65%</span>
+            </li>
+            <li>
+              <span class="icon">
+                <i class="fab fa-react"></i>                
+              </span>
+              React.Js - <span class="has-text-success has-text-weight-normal">Learning</span>
             </li>
           </ul>
         </div>

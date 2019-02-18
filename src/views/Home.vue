@@ -18,10 +18,9 @@
               </ul>
             </div>
             <div class="columns is-multiline">
-              <div class="column is-6" v-for="(project, index) in projects" :key="index">
+              <div class="column is-12" v-for="(project, index) in projects" :key="index">
                 <CardComponent
                   :imgComp="project.imgComp"
-                  :img="project.img"
                   :name="project.name"
                   :technologies="project.tech"
                   :description="project.description"
