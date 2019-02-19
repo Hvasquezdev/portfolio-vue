@@ -24,6 +24,12 @@ let certifications = [
     code: '8303fa26-c3b0-4ff5-8157-b936c8fe0558'
   },
   {
+    img: require('../assets/vue-basico.png'),
+    name: 'Curso básico de Vue.js', 
+    link: 'https://platzi.com/@hector398/curso/1111-vuejs/diploma/detalle/',
+    code: '745b7780-2ba6-4fdf-9a6d-1dc8dbf1630e'
+  },
+  {
     img: require('../assets/ingles-basico.png'),
     name: 'Ingles Basico Para Principiantes', 
     link: 'https://platzi.com/@hector398/curso/1358-ingles-basico/diploma/detalle/',
