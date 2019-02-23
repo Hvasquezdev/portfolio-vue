@@ -2,7 +2,7 @@
   <div class="card">
     <div class="card-image">
       <figure class="image">
-        <img :src="certification.img" alt="">
+        <img :src="certification.img" :alt="certification.name">
       </figure>
     </div>
 
