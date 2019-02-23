@@ -17,6 +17,6 @@ export default {
 
 <style lang="scss">
 @import url(https://use.fontawesome.com/releases/v5.6.3/css/all.css);
-@import url(https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.css);
+@import "~bulma/bulma.sass";
 @import "./assets/css/animations.css";
 </style>

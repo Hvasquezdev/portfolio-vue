@@ -1,4 +1,10 @@
-let certifications = [
+const certifications = [
+  {
+    img: require('../assets/arquitecto-front.png'),
+    name: 'Carrera de Arquitectura Frontend', 
+    link: 'https://platzi.com/@hector398/carrera/42-arquitecto/diploma/detalle/',
+    code: 'b726f308-349b-47f1-a78c-105d4818d1ba'
+  },
   {
     img: require('../assets/desarollo-web.png'),
     name: 'Desarrollo Web Online', 
@@ -25,9 +31,21 @@ let certifications = [
   },
   {
     img: require('../assets/vue-basico.png'),
-    name: 'Curso básico de Vue.js', 
+    name: 'Vue.Js Básico', 
     link: 'https://platzi.com/@hector398/curso/1111-vuejs/diploma/detalle/',
     code: '745b7780-2ba6-4fdf-9a6d-1dc8dbf1630e'
+  },
+  {
+    img: require('../assets/vue-profesional.png'),
+    name: 'Vue.Js Profesional', 
+    link: 'https://platzi.com/@hector398/curso/1145-vuejs-profesional/diploma/detalle/',
+    code: 'b2c100f9-c71b-4a8a-b6a0-c2db865ad816'
+  },
+  {
+    img: require('../assets/react.png'),
+    name: 'Curso de React.Js', 
+    link: 'https://platzi.com/@hector398/curso/1199-react/diploma/detalle/',
+    code: '0de770cf-bccc-4c24-957d-dd28b195a093'
   },
   {
     img: require('../assets/ingles-basico.png'),

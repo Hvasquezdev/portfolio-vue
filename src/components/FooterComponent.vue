@@ -15,11 +15,11 @@
 
     </p>
     <div class="copyright has-text-centered has-text-white">Handcrafted by <span class="icon has-white-text" style="vertical-align:middle;"><i class="far fa-copyright"></i></span>Hector Vasquez</div>
-    <div class="made-by-bulma has-text-centered">
+    <!-- <div class="made-by-bulma has-text-centered">
       <a href="https://bulma.io">
         <img src="https://bulma.io/images/made-with-bulma--semiwhite.png" alt="Made with Bulma" width="256" height="48">
       </a>
-    </div>
+    </div> -->
   </footer>
 </template>
 

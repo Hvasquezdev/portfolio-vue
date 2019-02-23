@@ -3,7 +3,7 @@
     <div class="container">
       <div class="columns is-multiline">
         <div class="column is-2">
-          <router-link to="/" tag="button" class="button is-warning is-outlined is-medium">
+          <router-link to="/" tag="button" class="button is-warning is-outlined is-medium has-text-dark">
             <span class="icon">
               <i class="fas fa-caret-square-left"></i>
             </span>
@@ -17,19 +17,8 @@
           </h1>
         </div>
 
-        <div class="column is-12" v-for="(item, index) in Certifications" :key="index">
-          <div class="blog-card certifi-card is-width-100" :class="{'alt': !((index + 1) % 2)}">
-            <div class="meta">
-              <div class="photo" v-bind:style="{backgroundImage: 'url(' + item.img + ')'}"></div>
-            </div>
-            <div class="description">
-              <h2 class="has-text-weight-bold">{{ item.name }}</h2>
-              <p>
-                <strong>Verification code:</strong> {{ item.code }}
-              </p>
-              <a :href="item.link" class="button is-warning is-outlined" target="_blank">Certification Link</a>
-            </div>
-          </div>
+        <div class="column is-4-widescreen is-6-tablet is-12-mobile" v-for="(item, index) in Certifications" :key="index">
+          <CertificationsCard :certification="item" />
         </div>
 
       </div>
@@ -38,11 +27,13 @@
 </template>
 
 <script>
-import BoxComponent from '@/components/BoxComponent.vue'
 import Certifications from '@/constants/certifications.js'
+
+import CertificationsCard from '@/components/CertificationsCard.vue'
+
 export default {
   components: {
-    BoxComponent
+    CertificationsCard
   },
   data() {
     return {
@@ -53,5 +44,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../assets/css/card.scss';
+.section {
+  background: radial-gradient(circle, #D7D7D7, #D7D7D7 1px, #FFF 1px, #FFF);
+  background-size: 28px 28px;
+}
 </style>

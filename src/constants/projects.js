@@ -1,4 +1,4 @@
-let projects = [
+const projects = [
   {
     imgComp: require('../assets/sparesbox-comp-min.png'),
     name: 'Sparesbox',
