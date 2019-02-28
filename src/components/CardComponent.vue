@@ -29,11 +29,13 @@
     </div>
     <footer class="card-footer">
       <a 
+        :class="{ 'disabledButton has-text-warning': !project.github }"
         class="card-footer-item has-text-success" 
-        :href="project.github"
+        :href="project.github || '#'"
         target="_blank"
       >
-        <strong>Github repo</strong>
+        <strong v-if="project.github">Github repo</strong>
+        <strong v-if="!project.github">Uploading project to github</strong>
         <span class="icon is-small">
           <i class="fab fa-github"></i>
         </span>
@@ -68,6 +70,14 @@ export default {
   &:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   }
+
+  .disabledButton {
+    pointer-events: none;
+    cursor: no-drop;
+    text-decoration: none;
+    filter: blur(.5px);
+  }
+
   .media {
     .media-left {
       .image {
