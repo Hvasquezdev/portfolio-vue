@@ -50,13 +50,13 @@
               <span class="icon">
                 <i class="fab fa-css3-alt"></i>
               </span>
-              CSS 3 - <span class="has-text-success has-text-weight-normal">70%</span>
+              CSS 3 - <span class="has-text-success has-text-weight-normal">75%</span>
             </li>
             <li>
               <span class="icon">
                 <i class="fab fa-css3-alt"></i>
               </span>
-              Bulma.Css - <span class="has-text-success has-text-weight-normal">75%</span>
+              Bulma.Css - <span class="has-text-success has-text-weight-normal">79%</span>
             </li>
             <li>
               <span class="icon">
@@ -68,7 +68,7 @@
               <span class="icon">
                 <i class="fab fa-vuejs"></i>
               </span>
-              Vue.Js - <span class="has-text-success has-text-weight-normal">75%</span>
+              Vue.Js - <span class="has-text-success has-text-weight-normal">80%</span>
             </li>
             <li>
               <span class="icon">

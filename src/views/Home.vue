@@ -20,6 +20,7 @@
             <div class="columns is-multiline">
               <div class="column is-6" v-for="(project, index) in projects" :key="index">
                 <CardComponent
+                  :project="project"
                   :img="project.imgComp"
                   :name="project.name"
                   :technologies="project.tech"
