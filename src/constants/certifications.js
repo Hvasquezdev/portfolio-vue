@@ -1,5 +1,11 @@
 const certifications = [
   {
+    img: require('../assets/carrera-vuejs.png'),
+    name: 'Carrera de Vue.Js', 
+    link: 'https://platzi.com/@hector398/carrera/98-vue/diploma/detalle/',
+    code: 'f41845de-9790-4215-9755-004d6c9a8eea'
+  },
+  {
     img: require('../assets/arquitecto-front.png'),
     name: 'Carrera de Arquitectura Frontend', 
     link: 'https://platzi.com/@hector398/carrera/42-arquitecto/diploma/detalle/',
