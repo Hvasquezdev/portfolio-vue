@@ -39,18 +39,14 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import HeaderComponent from '@/components/HeaderComponent.vue'
-import AboutComponent from '@/components/AboutComponent.vue'
-import CardComponent from '@/components/CardComponent.vue'
-import ModalComponent from '@/components/ModalComponent.vue'
 
 export default {
   name: 'home',
   components: {
-    HeaderComponent,
-    AboutComponent,
-    CardComponent,
-    ModalComponent
+    HeaderComponent: () => import('@/components/HeaderComponent.vue'),
+    AboutComponent: () => import('@/components/AboutComponent.vue'),
+    CardComponent: () => import('@/components/CardComponent.vue'),
+    ModalComponent: () => import('@/components/ModalComponent.vue')
   },
   data() {
     return {

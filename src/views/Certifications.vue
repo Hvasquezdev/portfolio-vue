@@ -28,11 +28,10 @@
 
 <script>
 import Certifications from '@/constants/certifications.js'
-import CertificationsCard from '@/components/CertificationsCard.vue'
 
 export default {
   components: {
-    CertificationsCard
+    CertificationsCard: () => import('@/components/CertificationsCard.vue')
   },
   data() {
     return {

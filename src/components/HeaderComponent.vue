@@ -76,6 +76,8 @@ export default {
 .social a {
   transform-origin: center;
   transition-duration: .2s;
+  color: #fff;
+  opacity: .5;
 }
 
 .social {
@@ -210,6 +212,7 @@ export default {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: #fff;
 
     i {
       cursor: pointer;

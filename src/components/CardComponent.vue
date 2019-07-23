@@ -1,8 +1,9 @@
 <template>
   <div class="card">
     <div class="card-image">
-      <figure class="image">
-        <img :src="project.imgComp" :alt="project.name">
+      <figure class="image" :class="{ 'pt-20': loadingImage }">
+        <lazy-image :lazySrc="project.imgComp" :alt="project.name" @loadingImage="isLoadingImage" v-show="!loadingImage" />
+        <spinner-component v-if="loadingImage" />
       </figure>
     </div>
 
@@ -59,10 +60,27 @@
 export default {
   name: 'CardComponent',
   props: ['project'],
+  components: {
+    lazyImage: () => import('@/components/LazyImage.vue'),
+    SpinnerComponent: () => import('@/components/SpinnerComponent.vue')
+  },
+  data() {
+    return {
+      loadingImage: true,
+    }
+  },
+  methods: {
+    isLoadingImage(value) {
+      this.loadingImage = value;
+    }
+  }
 }
 </script>
 
 <style lang="scss" scoped>
+.pt-20 {
+  padding-top: 20px;
+}
 .card {
   border-radius: 4px;
   overflow: hidden;
