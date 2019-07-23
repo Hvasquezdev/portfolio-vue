@@ -5,9 +5,11 @@
         <div class="column is-12-desktop is-6-tablet">
           <h5 class="title is-5">About Me</h5>
           <p>
-            Hi, I'm a Front-end developer with Vue.Js, Bulma Css. Interested in everything related to programming, 
-            web development and Game development. Currently studying my junior year in the informatic engineering career, 
-            and learning and improving day by day my knowledge as a Front-end developer.
+            Hi, I'm a Frontend Developer specialized in vuejs - JavaScript (ES6+) - Nodejs building components and aplications for the last 2 years. 
+            Writing code daily in personal and profesional projects and learning new things related. Born in Bolívar, Venezuela. My work is entirely based around web development focused in frontend development with Vuejs and modern JavaScript. 
+            Writing code since I was 17 years old.
+            <br />
+            Currently studying my junior year in the informatic engineering career, and I'm learning everyday new things about frontend - web development to improve my skills as a software developer focused on the web.
           </p>
           <ul>
             <li>
